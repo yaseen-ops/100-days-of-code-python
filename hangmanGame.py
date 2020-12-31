@@ -1,7 +1,7 @@
 import random
-import hangman_words
+
 import hangman_art
-from os import system, name
+import hangman_words
 
 print(hangman_art.logo)
 # word_list = ["tiger", "elephant", "camel", "lizard"]
