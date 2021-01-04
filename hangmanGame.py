@@ -1,9 +1,9 @@
 import random
 
-import hangman_art
+import art
 import hangman_words
 
-print(hangman_art.logo)
+print(art.hangman_logo)
 # word_list = ["tiger", "elephant", "camel", "lizard"]
 word_list = hangman_words.word_list
 random_word = random.choice(word_list)
@@ -39,7 +39,7 @@ while not end_game:
     print(empty_list)
     if user_guess not in random_word:
         lives -= 1
-        print(hangman_art.stages[lives])
+        print(art.stages[lives])
         if lives == 0:
             end_game = True
             print(f"Your Lose!.. The word is {random_word}")

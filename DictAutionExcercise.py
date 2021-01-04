@@ -1,6 +1,6 @@
-import dictionaryArt
+import art
 
-print(dictionaryArt.logo)
+print(art.dictionary_logo)
 
 bids = {}
 bidding_finished = False

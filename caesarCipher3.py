@@ -1,4 +1,4 @@
-import caesarArt
+import art
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
@@ -20,7 +20,7 @@ def caesar_cipher(user_text, shift_amount, cipher_direction):
     print(f"The {cipher_direction}d text is {code_text} \n\n")
 
 
-print(caesarArt.logo)
+print(art.caesar_logo)
 
 should_continue = True
 while should_continue:
