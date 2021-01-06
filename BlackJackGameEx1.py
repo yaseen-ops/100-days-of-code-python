@@ -1,6 +1,6 @@
 import random
-
 import art
+import subprocess
 
 
 def deal_card():
@@ -83,4 +83,5 @@ def play_game():
 
 
 while input("\n\nDo you want to play a game of blackjack? Type 'y' or 'n' : ") == "y":
+    # subprocess.call(['sh', '~/clear.sh'])  # This line for local run to clear the screen in bash
     play_game()
