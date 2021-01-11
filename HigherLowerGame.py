@@ -1,7 +1,8 @@
 import random
+import subprocess
 
 from HigherLowerGameData import data
-from art import higerlower, vs
+from art import higherlower, vs
 
 score = 0
 
@@ -22,7 +23,7 @@ def check_answer(guess, a_follower_count, b_follower_count):
         return guess == "b"
 
 
-print(higerlower)
+print(higherlower)
 account_b = random.choice(data)  # its like b = randomint, a = b & again b = randint , LOGIC
 game_should_continue = True
 while game_should_continue:
@@ -39,6 +40,8 @@ while game_should_continue:
     print(f"Against B : {format_account(account_b)}")
 
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
+    # subprocess.run(["clear"])  # Uncomment this line if you run in bash for clearing the screen
+    print(higherlower)
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
 
